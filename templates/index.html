@@ -18,8 +18,18 @@
     <div class="card">
       <a href="{{ update.link }}" target="_blank">
         <h2>{{ update.title }}</h2>
-        <p class="meta">{{ update.from_school }} → {{ update.to_school }}</p>
+
+        {% if update.from_school != "Unknown" or update.to_school != "Unknown" %}
+        <p class="meta">
+          {{ update.from_school if update.from_school != "Unknown" else "" }}
+          {% if update.from_school != "Unknown" and update.to_school != "Unknown" %}→{% endif %}
+          {{ update.to_school if update.to_school != "Unknown" else "" }}
+        </p>
+        {% endif %}
+
+        {% if update.sport != "Unknown" %}
         <p class="sport">{{ update.sport }}</p>
+        {% endif %}
       </a>
     </div>
     {% endfor %}
