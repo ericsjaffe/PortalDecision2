@@ -4,12 +4,26 @@ body {
   background: #f4f4f4;
   color: #333;
 }
+
 .site-header {
   background: #001C54;
   color: #fff;
   padding: 20px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
 }
+
+.site-logo {
+  height: 50px;
+  width: auto;
+  border-radius: 6px;
+}
+
+
 .subtitle {
   font-size: 1.1rem;
   color: #ccc;
