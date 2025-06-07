@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PortalDecision - NCAA Transfer Portal Updates</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <meta http-equiv="refresh" content="300">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>PortalDecision</h1>
+    <p class="subtitle">Live NCAA Transfer Portal Tracker</p>
+  </header>
+
+  <main class="grid">
+    {% for update in updates %}
+    <div class="card">
+      <a href="{{ update.link }}" target="_blank">
+        <h2>{{ update.title }}</h2>
+        <p class="meta">{{ update.from_school }} → {{ update.to_school }}</p>
+        <p class="sport">{{ update.sport }}</p>
+      </a>
+    </div>
+    {% endfor %}
+  </main>
+
+  <footer>
+    <p>Data sourced from On3 • Updated every 5 minutes</p>
+  </footer>
+
+</body>
+</html>

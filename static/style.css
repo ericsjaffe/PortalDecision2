@@ -1,0 +1,53 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+.site-header {
+  background: #001C54;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.subtitle {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  transition: transform 0.2s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card h2 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+.meta {
+  color: #555;
+  font-size: 0.9rem;
+}
+.sport {
+  color: #0066cc;
+  font-size: 0.85rem;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #001C54;
+  color: white;
+  margin-top: 40px;
+}
