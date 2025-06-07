@@ -28,6 +28,8 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   padding: 15px;
   transition: transform 0.2s ease-in-out;
+  text-decoration: none;
+  color: inherit;
 }
 .card:hover {
   transform: translateY(-5px);
@@ -35,6 +37,9 @@ body {
 .card h2 {
   font-size: 1.1rem;
   margin-bottom: 8px;
+}
+.card p {
+  margin: 4px 0;
 }
 .meta {
   color: #555;
@@ -50,4 +55,11 @@ footer {
   background: #001C54;
   color: white;
   margin-top: 40px;
+}
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  object-fit: cover;
 }

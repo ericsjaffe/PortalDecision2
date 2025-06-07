@@ -17,6 +17,9 @@
     {% for update in updates %}
     <div class="card">
       <a href="{{ update.link }}" target="_blank">
+        {% if update.image %}
+          <img src="{{ update.image }}" alt="{{ update.title }}" class="card-image">
+        {% endif %}
         <h2>{{ update.title }}</h2>
 
         {% if update.from_school != "Unknown" or update.to_school != "Unknown" %}
